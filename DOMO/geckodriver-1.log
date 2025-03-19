@@ -1,0 +1,22 @@
+1742130715281	geckodriver	INFO	Listening on 127.0.0.1:50143
+1742130715412	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Applications/Firefox. ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/02/c4kg11_93wlbc36vyjmt4kwm0000gq/T/rust_mozprofilebOZ9y3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1742130715657	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1742130715938	Marionette	INFO	Listening on port 50163
+WebDriver BiDi listening on ws://127.0.0.1:50144
+Read port: 50163
+1742130716107	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2025-03-16 18:41:56.191 firefox[8026:76836] +[IMKClient subclass]: chose IMKClient_Modern
+2025-03-16 18:41:56.191 firefox[8026:76836] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:50144/devtools/browser/6b9eb3a3-0bff-4e61-8311-32c4439712d3
+JavaScript error: https://www.globalsqa.com/wp-content/themes/Savia/js/jquery.jqzoom-core.js?ver=6.4.5, line 23: TypeError: $.browser is undefined
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 93: TagError: adsbygoogle.push() error: Only one 'enable_page_level_ads' allowed per page.
+JavaScript error: https://www.globalsqa.com/wp-content/themes/Savia/js/jquery.smoothscroll.js?ver=6.4.5, line 430: TypeError: $.browser is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/jPB5PXtVQ2U8QCw6pJiv_H-wuSh7uZFIUB8z4YRnPQ8.js line 2 > eval line 3703 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-7X7CX2NTS7&l=dataLayer&cx=c&gtm=457e53d0za200&tag_exp=102482433~102587591~102717422~102788824~102813109~102814060~102825837~102879719, line 633: Script terminated by timeout at:
+h.Rl/c/<@https://www.googletagmanager.com/gtag/js?id=G-7X7CX2NTS7&l=dataLayer&cx=c&gtm=457e53d0za200&tag_exp=102482433~102587591~102717422~102788824~102813109~102814060~102825837~102879719:633:406
+
+1742182487588	Marionette	INFO	Stopped listening on port 50163

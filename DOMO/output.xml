@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.9.6 on darwin)" generated="2025-03-19T21:05:32.271022" rpa="false" schemaversion="5">
+<suite id="s1" name="Capture Screenshot" source="/Users/hardeep.digra/RAKUTEN-OAT/19March/oat-qa-automation-dashboard_local/DOMO/capture_screenshot.robot">
+<test id="s1-t1" name="Login, Search, Open Dashboard, Verify and Capture Full Screenshot" line="27">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:05:32.436517" level="INFO">Opening browser 'chrome' to base url 'https://rakuten-denwa.domo.com/page/-100000'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-19T21:05:32.436270" elapsed="5.347897"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-19T21:05:37.785658" elapsed="0.044400"/>
+</kw>
+<kw name="Sign In to Website">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIGN_IN_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-19T21:05:37.831002" elapsed="0.016398"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:05:37.847827" level="INFO">Clicking element 'xpath=//span[normalize-space()='Sign In']'.</msg>
+<arg>${SIGN_IN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T21:05:37.847594" elapsed="1.687955"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${USERNAME_INPUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-19T21:05:39.535789" elapsed="0.014820"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:05:39.551051" level="INFO">Typing text 'sv-ctio-oat-box@rakuten.com' into text field 'xpath=//input[@id='userNameInput']'.</msg>
+<arg>${USERNAME_INPUT}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T21:05:39.550788" elapsed="0.131795"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PASSWORD_INPUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-19T21:05:39.682793" elapsed="0.012992"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:05:39.696236" level="INFO">Typing text 'B&amp;XTp8rC#y#3uXKr#%hFFvU%miqF%AFb' into text field 'xpath=//input[@id='passwordInput']'.</msg>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T21:05:39.695964" elapsed="0.047785"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-19T21:05:39.743960" elapsed="0.010672"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:05:39.754981" level="INFO">Clicking element 'xpath=//span[@id='submitButton']'.</msg>
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T21:05:39.754782" elapsed="0.035447"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-19T21:05:49.792561" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-19T21:05:39.790403" elapsed="10.002860"/>
+</kw>
+<status status="PASS" start="2025-03-19T21:05:37.830575" elapsed="11.963312"/>
+</kw>
+<kw name="Search and Open Dashboard">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NAVIGATION_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-19T21:05:49.811546" elapsed="2.360933"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:05:52.172971" level="INFO">Clicking element 'xpath=//button[@class='TopNavBar_navButton_HMFJj db-button ng-scope']'.</msg>
+<arg>${NAVIGATION_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T21:05:52.172712" elapsed="0.046529"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_INPUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-19T21:05:52.219459" elapsed="0.223950"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:05:52.444213" level="INFO">Typing text 'COGS_Maintenance Dashboard' into text field 'xpath=//input[@placeholder='Filter by name']'.</msg>
+<arg>${SEARCH_INPUT}</arg>
+<arg>${DASHBOARD_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T21:05:52.443839" elapsed="0.081326"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-19T21:05:57.526933" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-19T21:05:52.525378" elapsed="5.001678"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${DASHBOARD_LINK}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-19T21:05:57.527257" elapsed="0.051631"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:05:57.579327" level="INFO">Clicking element 'xpath=(//span[text()='COGS_Maintenance Dashboard'])[1]'.</msg>
+<arg>${DASHBOARD_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T21:05:57.579088" elapsed="0.136444"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-19T21:06:07.718860" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-19T21:05:57.716007" elapsed="10.003501"/>
+</kw>
+<status status="PASS" start="2025-03-19T21:05:49.795138" elapsed="17.924982"/>
+</kw>
+<kw name="Verify Dashboard Name">
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2025-03-19T21:06:07.722556" elapsed="0.860123"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-19T21:06:23.585362" level="INFO">Slept 15 seconds.</msg>
+<arg>15</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-19T21:06:08.583428" elapsed="15.002133"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-03-19T21:06:23.604200" level="INFO">${actual_dashboard_name} = COGS_Maintenance Dashboard</msg>
+<var>${actual_dashboard_name}</var>
+<arg>${PAGE_TITLE}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-19T21:06:23.585826" elapsed="0.018418"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${actual_dashboard_name}</arg>
+<arg>${DASHBOARD_NAME}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-03-19T21:06:23.604402" elapsed="0.000233"/>
+</kw>
+<status status="PASS" start="2025-03-19T21:06:07.721253" elapsed="15.883460"/>
+</kw>
+<kw name="Capture Full Page Screenshot">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-19T21:07:13.606337" level="INFO">Slept 50 seconds.</msg>
+<arg>50</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-19T21:06:23.605132" elapsed="50.001901"/>
+</kw>
+<kw name="Capture Full Page Screenshot Keyword" owner="capture_screenshot">
+<msg time="2025-03-19T21:07:21.876691" level="INFO">Full-page screenshot saved at /Users/hardeep.digra/RAKUTEN-OAT/19March/oat-qa-automation-dashboard_local/DOMO/CurrentScreenshots/COGS_Maintenance Dashboard_19032025.png</msg>
+<msg time="2025-03-19T21:07:21.876850" level="INFO">${filename} = /Users/hardeep.digra/RAKUTEN-OAT/19March/oat-qa-automation-dashboard_local/DOMO/CurrentScreenshots/COGS_Maintenance Dashboard_19032025.png</msg>
+<var>${filename}</var>
+<doc>Captures a full-page screenshot using Chrome DevTools Protocol (CDP)
+and saves it as a PNG file in a directory determined by the environment.
+Handles lazy-loaded content by scrolling through the page.</doc>
+<status status="PASS" start="2025-03-19T21:07:13.608164" elapsed="8.268775"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-19T21:07:21.877400" level="INFO">Full-page screenshot saved at /Users/hardeep.digra/RAKUTEN-OAT/19March/oat-qa-automation-dashboard_local/DOMO/CurrentScreenshots/COGS_Maintenance Dashboard_19032025.png</msg>
+<arg>Full-page screenshot saved at ${filename}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-19T21:07:21.877183" elapsed="0.000274"/>
+</kw>
+<doc>Capture a full-page screenshot with lazy-loaded content using the custom Python function.</doc>
+<status status="PASS" start="2025-03-19T21:06:23.604906" elapsed="58.272630"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-19T21:07:21.877694" elapsed="0.139587"/>
+</kw>
+<status status="PASS" start="2025-03-19T21:05:32.435156" elapsed="109.582485"/>
+</test>
+<status status="PASS" start="2025-03-19T21:05:32.272345" elapsed="109.745731"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Capture Screenshot" id="s1" pass="1" fail="0" skip="0">Capture Screenshot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
