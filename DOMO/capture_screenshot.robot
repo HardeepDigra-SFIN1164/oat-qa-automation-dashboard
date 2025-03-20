@@ -6,9 +6,9 @@ Library    BuiltIn
 Library    capture_screenshot.py  # Import the Python file as a library
 
 *** Variables ***
-${USERNAME}          sv-ctio-oat-box@rakuten.com
-${PASSWORD}          B&XTp8rC#y#3uXKr#%hFFvU%miqF%AFb
-${URL}               https://rakuten-denwa.domo.com/page/-100000       #https://rakuten-denwa.domo.com/datasources/b4c77da3-9ab6-4d01-8400-e592550d9b4f/details/history      #https://www.domo.com/domopalooza/agenda#training   #https://www.globalsqa.com/     #https://rakuten-denwa.domo.com/page/-100000
+${USERNAME}          #
+${PASSWORD}          #
+${URL}               https://rakuten-denwa.domo.com/page/-100000       #https://rakuten-denwa.domo.com/datasources/b4c77da3-9ab6-4d01-8400-e592550d9b4f/details/history         #https://www.globalsqa.com/     
 ${BROWSER}           chrome
 ${DASHBOARD_NAME}    COGS_Maintenance Dashboard
 ${SCREENSHOT_DIR}    ${EXECDIR}/CurrentScreenshots  # Define the screenshot directory
